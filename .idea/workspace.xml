@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e263557-9a54-4fb4-9851-805e0db462cd" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PlU6MQsszq4u7PQMdb8M1n2bwS" />
+  <component name="PropertiesComponent">
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="303" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="masterpeer.tutorial.woodcutting" />
+      <recent name="masterpeer.tutorial.beginAndFish" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="masterpeer.tutorial.beginAndFish" />
+      <recent name="masterpeer.tutorial.banking" />
+      <recent name="masterpeer.tutorial.combatCave" />
+      <recent name="masterpeer.tutorial.combat" />
+      <recent name="masterpeer.tutorial.mining" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.rspeer.Application" />
+      <module name="MasterPeer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e263557-9a54-4fb4-9851-805e0db462cd" name="Default Changelist" comment="" />
+      <created>1556612349697</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556612349697</updated>
+      <workItem from="1566448002801" duration="606000" />
+      <workItem from="1566525833152" duration="2981000" />
+      <workItem from="1568523329094" duration="14963000" />
+      <workItem from="1569037380430" duration="1174000" />
+      <workItem from="1569097467134" duration="22241000" />
+      <workItem from="1569190264937" duration="8141000" />
+      <workItem from="1569211002353" duration="6387000" />
+      <workItem from="1569307966474" duration="3804000" />
+      <workItem from="1569715640199" duration="26051000" />
+      <workItem from="1569803678172" duration="18956000" />
+      <workItem from="1569895216302" duration="8284000" />
+      <workItem from="1570309675192" duration="26558000" />
+      <workItem from="1570911835667" duration="28656000" />
+      <workItem from="1571509065878" duration="9216000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
