@@ -45,7 +45,7 @@ public class RetrieveGear extends Task {
                 Log.info("path walk failed, rebuilding");
                 path = Movement.buildPath(nearestBank.getPosition());
             }
-            Time.sleepUntil(() -> Movement.getDestinationDistance() <= 10, Random.nextInt(1500, 15000));
+            Time.sleepUntil(() -> Movement.getDestinationDistance() <= Random.nextInt(1, 10), Random.nextInt(1500, 15000));
         }
         return 0;
     }

@@ -11,4 +11,13 @@ public class Constants {
     public static Position BANK_TILE = new Position(3122, 3123);
     public static Position CHAPEL = new Position(3126, 3106);
     public static Area LUMBRIDGE = Area.rectangular(3231, 3224, 3239, 3215);
+    public static Position LUMBRIDGEKITCHEN_POSITION = new Position(3208, 3213);
+    public static final String[] JUNK = {"bronze axe", "tinderbox", "small net", "shrimps", "bronze dagger", "copper ore", "shortbow", "bronze arrow", "air rune", "mind rune", "bucket",
+            "pot", "bread", "water rune", "earth rune", "body rune"};
+    public static final int RUNEMYSTERIES_VARP = 63;
+    public static final int RESTLESSGHOST_VARP = 107;
+    public static final int ROMEOANDJULIET_VARP = 144;
+    public static final int SHEEPSHEARER_VARP = 179;
+    public static final int XMARKSTHESPOT_VARP = 2111;
+
 }

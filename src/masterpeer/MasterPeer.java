@@ -2,9 +2,13 @@ package masterpeer;
 
 import org.rspeer.runetek.api.commons.Time;
 import org.rspeer.runetek.api.commons.math.Random;
+import org.rspeer.runetek.api.component.Dialog;
+import org.rspeer.runetek.api.component.Shop;
+import org.rspeer.runetek.api.component.tab.Inventory;
 import org.rspeer.runetek.api.component.tab.Skill;
 import org.rspeer.runetek.api.component.tab.Skills;
 import org.rspeer.runetek.api.input.Camera;
+import org.rspeer.runetek.api.input.menu.ActionOpcodes;
 import org.rspeer.runetek.event.listeners.RenderListener;
 import org.rspeer.runetek.event.types.RenderEvent;
 import org.rspeer.script.ScriptMeta;
@@ -32,6 +36,12 @@ public class MasterPeer extends TaskScript implements RenderListener {
         Log.info("[Setting paused to true]");
         this.setPaused(true);
         Log.info("[Starting]");
+        Log.info("isviewingchatOptions? " + Dialog.isViewingChatOptions());
+        Log.info("Dialog is open? " + Dialog.isOpen());
+        Log.info("inventory has pot of flour? " + Inventory.contains("Pot of flour"));
+        Log.info("inventory has bucket?" + Inventory.contains("Bucket"));
+        Log.info("inventory has bucket of milk?" + Inventory.contains("Bucket of milk"));
+
         /*int lvl = Skills.getLevel(Skill.THIEVING);
         startXp = Skills.getExperience(Skill.THIEVING);
         startTime = System.currentTimeMillis();
@@ -67,16 +77,15 @@ public class MasterPeer extends TaskScript implements RenderListener {
             Log.info("New pitch " + pitch);
         }
         if (getCurrent() != null) {
-            String task = getCurrent().getClass().getSimpleName();
-            if (task.equals("Logout")) {
+            String taskName = getCurrent().getClass().getSimpleName();
+            if (taskName.equals("Logout") || taskName.equals("CloseQuestCompleteInterface")) {
                 setStopping(true);
                 Log.info("Set stopping true");
             }
-            if (!currentTask.equals(task)) {
-                currentTask = task;
+            if (!currentTask.equals(taskName)) {
+                currentTask = taskName;
                 Log.info(currentTask);
                 if (Camera.getPitch() != 383) {
-                    int newPitch = Random.nextInt(280, 384);
                 }
             }
         }

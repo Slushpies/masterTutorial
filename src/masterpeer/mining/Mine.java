@@ -5,6 +5,7 @@ import org.rspeer.runetek.api.commons.Time;
 import org.rspeer.runetek.api.commons.math.Random;
 import org.rspeer.runetek.api.component.tab.Equipment;
 import org.rspeer.runetek.api.component.tab.Inventory;
+import org.rspeer.runetek.api.movement.position.Position;
 import org.rspeer.runetek.api.scene.Players;
 import org.rspeer.runetek.api.scene.SceneObjects;
 import org.rspeer.script.task.Task;
@@ -16,11 +17,15 @@ public class Mine extends Task {
     final int COPPER_ROCK = 10943;
     final int[] IRON_ROCKS = {11364, 11365};
     SceneObject rock = null;
+    private Position minePosition;
 
+    public Mine(Position minePosition){
+        this.minePosition = minePosition;
+    }
     @Override
     public boolean validate() {
         return (Inventory.contains((item) -> item.getName().contains("pick")) || Equipment.contains((item) -> item.getName().contains("pick")))
-                && !Players.getLocal().isAnimating() && !Inventory.isFull() && ALKHARID_MINE.distance() <= 15;
+                && !Players.getLocal().isAnimating() && !Inventory.isFull() && minePosition.distance() <= 15;
     }
 
     @Override
@@ -32,7 +37,6 @@ public class Mine extends Task {
                 Log.info("Mined rock - " + "inventory count: " + Inventory.getCount());
             }
         }
-        Log.info("Returning");
         return Random.nextInt(1500, 3000);
     }
 }

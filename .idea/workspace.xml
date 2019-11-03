@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e263557-9a54-4fb4-9851-805e0db462cd" name="Default Changelist" comment="" />
+    <list default="true" id="6e263557-9a54-4fb4-9851-805e0db462cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/mining/DepositLoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/CloseQuestCompleteInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/QuestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/cooksassistant/CollectItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/cooksassistant/CollectMilk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/cooksassistant/HandleDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/cooksassistant/MakeFlour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/cooksassistant/TalkToChef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/piratestreasure/TalkToRedbeard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/restlessghost/EquipGhostspeakAmulet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/restlessghost/GetGhostSkull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/restlessghost/HandleDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/restlessghost/ReturnSkullToCoffin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/restlessghost/SearchCoffin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/restlessghost/TalkToFatherAereck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/restlessghost/TalkToFatherUrhney.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/restlessghost/TalkToGhost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/romeoandjuliet/GetCadavaBerries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/romeoandjuliet/HandleDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/romeoandjuliet/TalkToApothecary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/romeoandjuliet/TalkToFatherLawrence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/romeoandjuliet/TalkToJuliet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/romeoandjuliet/TalkToRomeo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/runemysteries/Begin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/runemysteries/HandleDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/runemysteries/TalkToAubury.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/runemysteries/TalkToGhost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/runemysteries/TalkToSedridor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/sheepshearer/HandleDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/sheepshearer/ShearSheep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/sheepshearer/SpinWool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/sheepshearer/TakeShears.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/sheepshearer/TalkToFred.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/sheepshearer/UseSpinningWheel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/BuySpade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/FirstClue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/FourthClue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/HandleDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/OpenShop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/SecondClue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/SellJunk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/TalkToVeos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/ThirdClue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/masterpeer/quests/xmarksthespot/TurnInCasket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masterpeer/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/masterpeer/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masterpeer/Gui.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/masterpeer/Gui.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masterpeer/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/masterpeer/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masterpeer/MasterPeer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/masterpeer/MasterPeer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masterpeer/mining/Mine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/masterpeer/mining/Mine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masterpeer/mining/MiningUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/masterpeer/mining/MiningUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masterpeer/mining/RetrieveGear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/masterpeer/mining/RetrieveGear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masterpeer/tutorial/beginAndFish/NavigateOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/masterpeer/tutorial/beginAndFish/NavigateOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masterpeer/tutorial/end/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/masterpeer/tutorial/end/Logout.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +74,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1PlU6MQsszq4u7PQMdb8M1n2bwS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="303" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="264" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -30,15 +91,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="masterpeer.quests.xmarksthespot" />
       <recent name="masterpeer.tutorial.woodcutting" />
       <recent name="masterpeer.tutorial.beginAndFish" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="masterpeer.quests.cooksassistant" />
+      <recent name="masterpeer.quests.sheepshearer" />
+      <recent name="masterpeer.quests.restlessghost" />
       <recent name="masterpeer.tutorial.beginAndFish" />
       <recent name="masterpeer.tutorial.banking" />
-      <recent name="masterpeer.tutorial.combatCave" />
-      <recent name="masterpeer.tutorial.combat" />
-      <recent name="masterpeer.tutorial.mining" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -86,11 +148,29 @@
       <workItem from="1569895216302" duration="8284000" />
       <workItem from="1570309675192" duration="26558000" />
       <workItem from="1570911835667" duration="28656000" />
-      <workItem from="1571509065878" duration="9216000" />
+      <workItem from="1571509065878" duration="18527000" />
+      <workItem from="1571827162928" duration="792000" />
+      <workItem from="1571888771569" duration="4864000" />
+      <workItem from="1572150704802" duration="843000" />
+      <workItem from="1572156180665" duration="38615000" />
+      <workItem from="1572679206290" duration="30380000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

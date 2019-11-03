@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="masterpeer.Gui">
-  <grid id="27dc6" binding="gayPanel" layout-manager="GridLayoutManager" row-count="4" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="gayPanel" layout-manager="GridLayoutManager" row-count="4" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1242" height="586"/>
+      <xy x="20" y="20" width="832" height="611"/>
     </constraints>
     <properties>
       <opaque value="false"/>
@@ -14,7 +14,7 @@
       <grid id="52418" binding="breakPanel" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="2" column="3" row-span="2" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="2" col-span="7" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
         <border type="none"/>
@@ -177,7 +177,7 @@
       </grid>
       <component id="3e3d3" class="javax.swing.JTextField" binding="totalRuntimeMinutesTextField">
         <constraints>
-          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -188,7 +188,7 @@
       </component>
       <grid id="79510" binding="breakTablePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
         <constraints>
-          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-9973291"/>
@@ -201,6 +201,60 @@
         </border>
         <children/>
       </grid>
+      <component id="b166f" class="javax.swing.JButton" binding="combatButton">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10987201"/>
+          <text value="Combat"/>
+        </properties>
+      </component>
+      <component id="19b59" class="javax.swing.JButton" binding="tutorialButton">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10987201"/>
+          <text value="Tutorial"/>
+        </properties>
+      </component>
+      <component id="ecd3b" class="javax.swing.JButton" binding="startButton">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="3" vsize-policy="0" hsize-policy="7" anchor="2" fill="0" indent="2" use-parent-layout="false">
+            <preferred-size width="100" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Start"/>
+        </properties>
+      </component>
+      <component id="f398f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Target Monster"/>
+        </properties>
+      </component>
+      <component id="ec46f" class="javax.swing.JTextField" binding="monsterTextField">
+        <constraints>
+          <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="seagull"/>
+        </properties>
+      </component>
+      <component id="6c06d" class="javax.swing.JButton" binding="generateTotalRuntimeButton">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Generate"/>
+        </properties>
+      </component>
       <component id="1a837" class="javax.swing.JButton" binding="miningButton">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
@@ -210,60 +264,53 @@
           <text value="Mining"/>
         </properties>
       </component>
-      <component id="19b59" class="javax.swing.JButton" binding="tutorialButton">
+      <component id="44029" class="javax.swing.JRadioButton" binding="miningDropRadioButton">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-10987201"/>
-          <text value="Tutorial"/>
+          <selected value="false"/>
+          <text value="Drop"/>
         </properties>
       </component>
-      <component id="b166f" class="javax.swing.JButton" binding="combatButton">
+      <component id="8c41c" class="javax.swing.JRadioButton" binding="miningBankRadioButton">
         <constraints>
-          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-10987201"/>
-          <text value="Combat"/>
+          <selected value="true"/>
+          <text value="Bank"/>
         </properties>
       </component>
-      <component id="ec46f" class="javax.swing.JTextField" binding="monsterTextField">
+      <component id="a9be1" class="javax.swing.JButton" binding="questsButton" default-binding="true">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="seagull"/>
+          <text value="Quests"/>
         </properties>
       </component>
-      <component id="f398f" class="javax.swing.JLabel">
+      <component id="8af65" class="javax.swing.JComboBox" binding="questComboBox">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Target Monster"/>
-        </properties>
-      </component>
-      <component id="6c06d" class="javax.swing.JButton" binding="generateTotalRuntimeButton">
-        <constraints>
-          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Generate"/>
-        </properties>
-      </component>
-      <component id="ecd3b" class="javax.swing.JButton" binding="startButton">
-        <constraints>
-          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="2" fill="0" indent="2" use-parent-layout="false">
-            <preferred-size width="100" height="50"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value="Start"/>
+          <model>
+            <item value="Cook's Assistant"/>
+            <item value="Sheep Shearer"/>
+            <item value="The Restless Ghost"/>
+            <item value="X Marks The Spot"/>
+            <item value="Rune Mysteries"/>
+            <item value="Romeo And Juliet"/>
+          </model>
         </properties>
       </component>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="miningGroup">
+      <member id="44029"/>
+      <member id="8c41c"/>
+    </group>
+  </buttonGroups>
 </form>

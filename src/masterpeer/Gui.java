@@ -1,10 +1,19 @@
 package masterpeer;
 
 import masterpeer.combat.*;
-import masterpeer.mining.Drop;
 import masterpeer.mining.Mine;
 import masterpeer.mining.RetrieveGear;
 import masterpeer.mining.WalkToMine;
+import masterpeer.quests.CloseQuestCompleteInterface;
+import masterpeer.quests.cooksassistant.CollectItems;
+import masterpeer.quests.cooksassistant.CollectMilk;
+import masterpeer.quests.cooksassistant.MakeFlour;
+import masterpeer.quests.cooksassistant.TalkToChef;
+import masterpeer.quests.runemysteries.TalkToAubury;
+import masterpeer.quests.runemysteries.TalkToSedridor;
+import masterpeer.quests.sheepshearer.*;
+import masterpeer.quests.xmarksthespot.*;
+import masterpeer.quests.xmarksthespot.HandleDialog;
 import masterpeer.tutorial.banking.*;
 import masterpeer.tutorial.beginAndFish.*;
 import masterpeer.tutorial.combatCave.*;
@@ -55,11 +64,16 @@ public class Gui extends JFrame {
     private JTextField totalRuntimeMinutesTextField;
     private JPanel breakTablePanel;
     private JButton tutorialButton;
+    private JRadioButton miningDropRadioButton;
+    private JRadioButton miningBankRadioButton;
+    private JButton questsButton;
+    private JComboBox questComboBox;
     private JList breakList;
     private JScrollPane breakScrollPane;
     private String targetMonster;
     private ArrayList<Break> breaks = new ArrayList<>();
     private String task;
+    String[] loot = {"Bones"};
 
     Gui(MasterPeer masterPeer) {
         setContentPane(gayPanel);
@@ -70,14 +84,35 @@ public class Gui extends JFrame {
         startButton.addActionListener(e -> {
             masterPeer.setPaused(false);
             this.setVisible(false);
+            masterPeer.submit(new CloseQuestCompleteInterface());
             switch (task) {
+                case "quests":
+                    String quest = questComboBox.getSelectedItem().toString();
+                    switch(quest){
+                        case "Cook's Assistant":
+                            masterPeer.submit(new masterpeer.quests.cooksassistant.HandleDialog(), new CollectItems(), new MakeFlour(), new CollectMilk(), new TalkToChef());
+                            break;
+                        case "X Marks The Spot":
+                            masterPeer.submit(new masterpeer.quests.xmarksthespot.HandleDialog(), new TalkToVeos(), new BuySpade(), new OpenShop(), new SellJunk(), new FirstClue(), new SecondClue(), new ThirdClue(),
+                                    new FourthClue(), new TurnInCasket());
+                            break;
+                        case "Rune Mysteries":
+                            masterPeer.submit(new masterpeer.quests.runemysteries.HandleDialog(), new masterpeer.quests.runemysteries.Begin(), new TalkToSedridor(), new TalkToAubury());
+                            break;
+                        case "Sheep Shearer":
+                            masterPeer.submit(new masterpeer.quests.sheepshearer.HandleDialog(), new ShearSheep(), new SpinWool(), new TakeShears(), new TalkToFred(), new UseSpinningWheel());
+                            break;
+                    }
+                    break;
                 case "mining":
+                    if(miningBankRadioButton.isSelected()){
+                        masterPeer.submit(new masterpeer.mining.DepositLoot(loot));
+                    }
                     Position miningSpot = bestMiningSpot();
-                    masterPeer.submit(new Mine(), new Drop(), new RetrieveGear(), new WalkToMine(miningSpot));
+                    masterPeer.submit(new Mine(miningSpot), new RetrieveGear(), new WalkToMine(miningSpot));
                     break;
                 case "combat":
                     this.targetMonster = monsterTextField.getText();
-                    String[] loot = {"Bones"};
                     masterPeer.submit(new Fight(targetMonster, loot), new ClickLevelUpContinue(), new WalkToMonsters(targetMonster, loot), new PickupLoot(loot), new DepositLoot(loot));
                     break;
                 case "tutorial":
@@ -107,6 +142,16 @@ public class Gui extends JFrame {
                 default:
                     task = "tutorial";
             }
+        });
+        questComboBox.addActionListener(e -> {
+            this.task = "quests";
+            clearButtonColors();
+            questsButton.setBackground(Color.green);
+        });
+        questsButton.addActionListener(e -> {
+            this.task = "quests";
+            clearButtonColors();
+            questsButton.setBackground(Color.green);
         });
         miningButton.addActionListener(e -> {
             this.task = "mining";

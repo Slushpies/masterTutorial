@@ -17,7 +17,6 @@ public class Logout extends Task {
 
     @Override
     public int execute() {
-
         Time.sleep(500, 15000);
         Game.logout();
         return 0;

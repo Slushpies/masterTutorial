@@ -2,6 +2,7 @@ package masterpeer.tutorial.beginAndFish;
 
 import org.rspeer.runetek.api.commons.Time;
 import org.rspeer.runetek.api.commons.math.Random;
+import org.rspeer.runetek.api.component.InterfaceOptions;
 import org.rspeer.runetek.api.component.Interfaces;
 import org.rspeer.runetek.api.component.tab.Tab;
 import org.rspeer.runetek.api.component.tab.Tabs;
@@ -22,13 +23,13 @@ public class NavigateOptions extends Task {
 
     @Override
     public int execute() {
-        if(Tabs.getOpen().equals(Tab.OPTIONS)){
+        if (Tabs.getOpen().equals(Tab.OPTIONS)) {
             Tabs.open(Tab.LOGOUT);
             return Random.nextInt(500, 5000);
         }
         Tabs.open(Tab.OPTIONS);
         Time.sleep(500, 5000);
-        if(Interfaces.getComponent(261, 34, 8).getBounds().equals(RESIZABLE_BOUNDS)) {
+        if (Interfaces.getComponent(261, 34, 8).getBounds().equals(RESIZABLE_BOUNDS)) {
             Interfaces.getComponent(261, 33).interact(ActionOpcodes.INTERFACE_ACTION);//Set screen to fixed
         }
         return Random.nextInt(500, 5000);
