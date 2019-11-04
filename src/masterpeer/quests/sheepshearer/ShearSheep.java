@@ -1,6 +1,8 @@
 package masterpeer.quests.sheepshearer;
 
 import org.rspeer.runetek.api.Varps;
+import org.rspeer.runetek.api.commons.Time;
+import org.rspeer.runetek.api.commons.math.Random;
 import org.rspeer.runetek.api.component.tab.Inventory;
 import org.rspeer.runetek.api.movement.position.Position;
 import org.rspeer.script.task.Task;
@@ -20,7 +22,9 @@ public class ShearSheep extends Task {
     @Override
     public int execute() {
         //Interact with a sheep that does not have a talk-to option (as this is a different type of sheep used in the Cold War quest)
+        int woolCount = Inventory.getCount("Wool");
         walkToPositionAndInteractWithNpc(SHEEP_POSITION, "Sheep", "Shear", (sheep) -> !sheep.containsAction("Talk-to"));
+        Time.sleepUntil(()->Inventory.getCount("Wool") > woolCount, Random.nextInt(5000, 20000));
         return 0;
     }
 }

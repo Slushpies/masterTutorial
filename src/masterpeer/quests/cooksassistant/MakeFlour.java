@@ -1,6 +1,7 @@
 package masterpeer.quests.cooksassistant;
 
 import org.rspeer.runetek.adapter.scene.SceneObject;
+import org.rspeer.runetek.api.Varps;
 import org.rspeer.runetek.api.commons.Time;
 import org.rspeer.runetek.api.commons.math.Random;
 import org.rspeer.runetek.api.component.tab.Inventory;
@@ -9,6 +10,7 @@ import org.rspeer.runetek.api.scene.Players;
 import org.rspeer.runetek.api.scene.SceneObjects;
 import org.rspeer.script.task.Task;
 
+import static masterpeer.Constants.COOKSASSISTANT_VARP;
 import static masterpeer.quests.QuestUtils.walkToPositionAndInteractWithObject;
 
 public class MakeFlour extends Task {
@@ -21,7 +23,8 @@ public class MakeFlour extends Task {
 
     @Override
     public boolean validate() {
-        return Inventory.contains("Egg")
+        return Varps.get(COOKSASSISTANT_VARP) < 2
+                && Inventory.contains("Egg")
                 && (Inventory.contains("Bucket") || Inventory.contains("Bucket of milk"))
                 && Inventory.contains("Pot")
                 && !Inventory.contains("Pot of flour");

@@ -4,10 +4,10 @@ import org.rspeer.runetek.api.component.tab.Inventory;
 import org.rspeer.runetek.api.movement.position.Position;
 import org.rspeer.script.task.Task;
 
-import static masterpeer.quests.QuestUtils.walkToPositionAndPickupItem;
+import static masterpeer.quests.QuestUtils.walkToPositionAndTakeItem;
 
 public class TakeShears extends Task {
-    Position FRED_POSITION = new Position(3190, 3272);
+    Position SHEARSADJACENT_POSITION = new Position(3191, 3272);
 
     @Override
     public boolean validate() {
@@ -16,7 +16,7 @@ public class TakeShears extends Task {
 
     @Override
     public int execute() {
-        walkToPositionAndPickupItem(FRED_POSITION, "Shears");
+        walkToPositionAndTakeItem(SHEARSADJACENT_POSITION, "Shears");
         return 0;
     }
 }

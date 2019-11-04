@@ -17,8 +17,7 @@ import org.rspeer.ui.Log;
 
 import java.awt.*;
 
-import static masterpeer.CommonUtils.Tools.formatTime;
-import static masterpeer.CommonUtils.Tools.perHour;
+import static masterpeer.CommonUtils.Tools.*;
 
 @ScriptMeta(developer = "Lyocell", desc = "For gay sex purposez", name = "MasterPeer")
 public class MasterPeer extends TaskScript implements RenderListener {
@@ -41,7 +40,6 @@ public class MasterPeer extends TaskScript implements RenderListener {
         Log.info("inventory has pot of flour? " + Inventory.contains("Pot of flour"));
         Log.info("inventory has bucket?" + Inventory.contains("Bucket"));
         Log.info("inventory has bucket of milk?" + Inventory.contains("Bucket of milk"));
-
         /*int lvl = Skills.getLevel(Skill.THIEVING);
         startXp = Skills.getExperience(Skill.THIEVING);
         startTime = System.currentTimeMillis();

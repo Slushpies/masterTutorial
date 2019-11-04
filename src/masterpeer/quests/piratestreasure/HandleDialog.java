@@ -1,6 +1,5 @@
-package masterpeer.quests.restlessghost;
+package masterpeer.quests.piratestreasure;
 
-import org.rspeer.runetek.api.commons.math.Random;
 import org.rspeer.runetek.api.component.Dialog;
 import org.rspeer.runetek.api.input.menu.ActionOpcodes;
 import org.rspeer.script.task.Task;
@@ -8,8 +7,7 @@ import org.rspeer.script.task.Task;
 import static masterpeer.CommonUtils.Tools.gaussian;
 
 public class HandleDialog extends Task {
-    String[] dialogChoices = {"I'm looking for a quest", "Ok, let me help then", "Father Aereck sent me", "He's got a ghost haunting his graveyard",
-    "Yep, now tell me what the problem is"};
+    String[] dialogChoices = {"I'm in search of treasure", "Ok, I will bring you some rum"};
 
     @Override
     public boolean validate() {

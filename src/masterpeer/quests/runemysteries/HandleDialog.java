@@ -6,6 +6,8 @@ import org.rspeer.runetek.api.input.menu.ActionOpcodes;
 import org.rspeer.script.task.Task;
 import org.rspeer.ui.Log;
 
+import static masterpeer.CommonUtils.Tools.gaussian;
+
 public class HandleDialog extends Task {
     String[] dialogChoices = {"Have you any quests for me?", "Sure, no problem", "I'm looking for the head wizard", "Ok, here you are", "Yes, certainly",
     "I have been sent here with a package for you"};
@@ -26,6 +28,6 @@ public class HandleDialog extends Task {
                 }
             }
         }
-        return Random.nextInt(250, 5000);
+        return gaussian(50, 15000, 2500, 2000);
     }
 }

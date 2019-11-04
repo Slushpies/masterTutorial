@@ -5,6 +5,8 @@ import org.rspeer.runetek.api.component.Dialog;
 import org.rspeer.runetek.api.input.menu.ActionOpcodes;
 import org.rspeer.script.task.Task;
 
+import static masterpeer.CommonUtils.Tools.gaussian;
+
 public class HandleDialog extends Task {
     String[] dialogChoices = {"I'm looking for a quest", "Sounds good, what should I do?", "Okay, thanks Veos"};
 
@@ -24,6 +26,6 @@ public class HandleDialog extends Task {
                 }
             }
         }
-        return Random.nextInt(250, 5000);
+        return gaussian(50, 15000, 2500, 2000);
     }
 }

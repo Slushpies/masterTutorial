@@ -70,7 +70,6 @@ public class QuestUtils {
         Npc npc = Npcs.newQuery().names(npcName).actions(action).filter(predicate).results().nearest();
         if (npc != null && npc.isPositionInteractable()) {
             npc.interact(action);
-            Time.sleep(gaussian(50, 15000, 6000, 5000));
             return;
         }
         //Npc is loaded but not interactable, walk towards them (might be behind a door etc.)
@@ -99,13 +98,18 @@ public class QuestUtils {
             //Time.sleepUntil(() -> Movement.getDestinationDistance() <= Random.nextInt(1, 10), Random.nextInt(1500, 15000));
             return;
         }
-        //Object is null and not interactable, walk towards position
-        Log.info("Object is null and not interactable, walk towards position");
+        //Object is null, walk towards position
+        Log.info("Object is null, walk towards position");
         Movement.walkToRandomized(position.randomize(1));
         //Time.sleepUntil(() -> Movement.getDestinationDistance() <= Random.nextInt(1, 10), Random.nextInt(1500, 15000));
     }
 
-    public static void walkToPositionAndPickupItem(Position position, String itemName) {
+    /**
+     *
+     * @param itemAdjacentPosition
+     * @param itemName
+     */
+    public static void walkToPositionAndTakeItem(Position itemAdjacentPosition, String itemName) {
         //Pick up item if it is interactable
         Pickable pickable = Pickables.getNearest(itemName);
         if (pickable != null && pickable.isPositionInteractable()) {
@@ -116,11 +120,10 @@ public class QuestUtils {
         //Item is loaded but not interactable, walk towards it (might be behind a door etc.)
         if (pickable != null && !pickable.isPositionInteractable()) {
             Log.info("Pickable is loaded but not interactable, walk towards them (might be behind a door etc.)");
-            Movement.walkToRandomized(pickable);
-            return;
+        } else {
+            Log.info("Pickable is null and not interactable, walk towards position");
         }
-        //Item is null and not interactable, walk towards position
-        Log.info("Pickable is null and not interactable, walk towards position");
-        Movement.walkToRandomized(position.randomize(1));
+        Movement.walkToRandomized(itemAdjacentPosition);
     }
+
 }

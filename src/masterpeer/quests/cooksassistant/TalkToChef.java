@@ -1,8 +1,10 @@
 package masterpeer.quests.cooksassistant;
 
+import org.rspeer.runetek.api.Varps;
 import org.rspeer.runetek.api.component.tab.Inventory;
 import org.rspeer.script.task.Task;
 
+import static masterpeer.Constants.COOKSASSISTANT_VARP;
 import static masterpeer.Constants.LUMBRIDGEKITCHEN_POSITION;
 import static masterpeer.quests.QuestUtils.walkToPositionAndTalkToNpc;
 
@@ -11,7 +13,8 @@ public class TalkToChef extends Task {
 
     @Override
     public boolean validate() {
-        return Inventory.containsAll(ingredients);
+        return Varps.get(COOKSASSISTANT_VARP) < 2
+                && Inventory.containsAll(ingredients);
     }
 
     @Override
